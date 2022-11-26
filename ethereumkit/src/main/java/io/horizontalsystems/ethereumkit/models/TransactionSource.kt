@@ -43,8 +43,8 @@ class TransactionSource(val name: String, val type: SourceType) {
 
         fun optimisticEtherscan(apiKey: String): TransactionSource {
             return TransactionSource(
-                "optimistic.etherscan.io",
-                SourceType.Etherscan("https://api-optimistic.etherscan.io", "https://optimistic.etherscan.io", apiKey)
+                "cartenz-scan.gitshock.com",
+                SourceType.Etherscan("https://api-cartenz-scan.gitshock.com", "https://cartenz-scan.gitshock.com", apiKey)
             )
         }
 
@@ -62,12 +62,12 @@ class TransactionSource(val name: String, val type: SourceType) {
             )
         }
 
-        fun gitshockscan(apiKey: String): TransactionSource {
-        	return TransactionSource(
-        		"cartenz-scan.gitshock.com",
-        		SourceType.Etherscan("https://api.cartenz-scan.gitshock.com", "https://cartenz-scan.gitshock.com", apiKey)
-        	)
-        }
+//        fun gitshockscan(apiKey: String): TransactionSource {
+//      	return TransactionSource(
+//       		"cartenz-scan.gitshock.com",
+//       		SourceType.Etherscan("https://api.cartenz-scan.gitshock.com", "https://cartenz-scan.gitshock.com", apiKey)
+//       	)
+//      }
 
     }
 

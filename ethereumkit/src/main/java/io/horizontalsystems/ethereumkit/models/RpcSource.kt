@@ -65,7 +65,7 @@ sealed class RpcSource() {
         }
 
         fun optimismRpcHttp(): Http {
-            return Http(listOf(URL("https://mainnet.optimism.io")), null)
+            return Http(listOf(URL("https://rpc-cartenz.gitshock.com")), null)
         }
 
         fun arbitrumOneRpcHttp(): Http {
@@ -75,9 +75,9 @@ sealed class RpcSource() {
         fun avaxNetworkHttp(): Http {
             return Http(listOf(URL("https://api.avax.network/ext/bc/C/rpc")), null)
         }
-        fun gitshockRpcHttp(): Http {
-        	return Http(listOf(URL("https://rpc-cartenz.gitshock.com")), null)
-        }
+//        fun gitshockRpcHttp(): Http {
+//       	return Http(listOf(URL("https://rpc-cartenz.gitshock.com")), null)
+//      }
 
     }
 }
